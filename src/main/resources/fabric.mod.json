@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "donutprofit",
+  "version": "${version}",
+  "name": "DonutProfit",
+  "description": "HUD limpio con balance, profit diario y tracker de sesiones de gambling.",
+  "authors": ["you"],
+  "icon": "assets/donutprofit/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.donutprofit.DonutProfitClient"],
+    "modmenu": ["com.example.donutprofit.ModMenuIntegration"]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
